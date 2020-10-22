@@ -15,9 +15,9 @@ initial begin
 	#5 enabled = 1;
 	#5 data = 12'b000000111000;
 	#1 load = 1; #1 load = 0; 
-	#5 enabled = 0;
-	#6 enabled = 1; data = 12'b000100110000;
-	#4 load = 1; #1 load = 0;
+	#6 enabled = 0; data = 12'b000100110000;
+	#5 enabled = 1;
+	#4 load = 1; #4 load = 0;
 	
 end
 

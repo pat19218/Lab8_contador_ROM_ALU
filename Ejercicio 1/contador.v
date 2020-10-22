@@ -11,7 +11,7 @@ always@(posedge clk, posedge reset)
 		q<=0;
 	else if (load)
 		q<=d;
-	else if (enabled)
+	else if (enabled && !load)
 		q<=q+1;
 
 endmodule

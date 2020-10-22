@@ -1,15 +1,9 @@
 module testbench();
-reg clk = 0;
 
 
+memory g();
 
-always@(*)begin
-	#1 clk = ~clk;
-end
 
-always@(*)begin
-	#1 clk = ~clk;
-end
 
 
 initial
