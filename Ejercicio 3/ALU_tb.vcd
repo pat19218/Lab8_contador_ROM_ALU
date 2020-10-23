@@ -1,5 +1,5 @@
 $date
-	Fri Oct 23 17:21:24 2020
+	Fri Oct 23 17:51:48 2020
 $end
 $version
 	Icarus Verilog
@@ -8,9 +8,113 @@ $timescale
 	1ps
 $end
 $scope module testbench $end
+$var wire 4 ! resultado [3:0] $end
+$var reg 4 " A [3:0] $end
+$var reg 4 # B [3:0] $end
+$var reg 3 $ opcion [2:0] $end
+$scope module m1 $end
+$var wire 4 % A [3:0] $end
+$var wire 4 & B [3:0] $end
+$var wire 3 ' funcion [2:0] $end
+$var reg 4 ( Alu_resultado [3:0] $end
+$var reg 4 ) resul [3:0] $end
+$upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
+b1 )
+b1 (
+b0 '
+b1011 &
+b101 %
+b0 $
+b1011 #
+b101 "
+b1 !
 $end
-#50
+#1
+b1111 !
+b1111 )
+b1111 (
+b1 $
+b1 '
+#2
+b0 !
+b0 )
+b0 (
+b10 $
+b10 '
+#3
+b11 $
+b11 '
+b1001 #
+b1001 &
+b1101 "
+b1101 %
+#4
+b100 $
+b100 '
+b1 "
+b1 %
+#5
+b1111 !
+b1111 )
+b1111 (
+b101 $
+b101 '
+b1 #
+b1 &
+b1111 "
+b1111 %
+#6
+b0 !
+b0 )
+b0 (
+b110 $
+b110 '
+b1101 #
+b1101 &
+b1101 "
+b1101 %
+#7
+b1 !
+b1 )
+b1 (
+b111 $
+b111 '
+b1111 #
+b1111 &
+b1010 "
+b1010 %
+#8
+b1100 !
+b1100 )
+b1100 (
+b101 $
+b101 '
+b1011 #
+b1011 &
+b1000 "
+b1000 %
+#9
+b1111 !
+b1111 )
+b1111 (
+b10 $
+b10 '
+b11 #
+b11 &
+b1100 "
+b1100 %
+#10
+b0 !
+b0 )
+b0 (
+b111 $
+b111 '
+b111 #
+b111 &
+b1010 "
+b1010 %
+#20
