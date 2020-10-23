@@ -1,7 +1,12 @@
-module  memory();
-	reg [7:0] my_memory [0:11];
+module memory (input wire [11:0]addres, output wire [7:0]data);
+
+	reg [7:0]mem[0:4095];	
+
 initial begin
-	$readmemh("memory.list", my_memory);
+	$readmemb("memoria.list",mem);
 end
 
+assign data = mem[addres];
+
 endmodule
+
