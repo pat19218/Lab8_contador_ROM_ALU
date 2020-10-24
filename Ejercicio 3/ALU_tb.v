@@ -7,6 +7,18 @@ wire [3:0] resultado;
 ALU m1(A, B, opcion, resultado);
 
 initial begin
+	$display("  opcion | operacion    |");
+	$display("-----------------------");
+	$display("   000    |    A AND B   |");
+	$display("   001    |    A  OR B   |");
+	$display("   010    |    A   + B   |");
+	$display("   011    |      NULO    |");
+	$display("   100    |    A AND B'  |");
+	$display("   101    |    A  OR B'  |");
+	$display("   110    |    A   - B   |");
+	$display("   111    |      STL     |");
+
+	$display(" ");
 	$display("  A    |  B   |opcion|  Y  |");
 	$display("-----|------|------|-----|");
 	$monitor("%b |  %b| %b  | %b|", A, B, opcion, resultado);
